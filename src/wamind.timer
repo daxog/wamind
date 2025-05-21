@@ -1,0 +1,9 @@
+[Unit]
+Description=Reminder to drink water every hour
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
