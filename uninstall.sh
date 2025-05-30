@@ -1,14 +1,15 @@
 #!/bin/bash
 set -e
 
-echo "Uninstalling wamind"
+echo "Uninstalling wamind."
 
 systemctl --user stop wamind.timer
 systemctl --user disable wamind.timer
 
-sudo rm -f /usr/local/bin/wamind.sh
-sudo rm -f /etc/systemd/user/wamind.{service,timer}
+rm -f ~/.local/bin/wamind.sh
+rm -f ~/.config/systemd/user/wamind.service
+rm -f ~/.config/systemd/user/wamind.timer
 
 systemctl --user daemon-reload
 
-echo "Uninstalled wamind"
+echo "Uninstalled wamind."
