@@ -1,5 +1,5 @@
 # wamind
-Background process to remind myself to stay hydrated.
+Timer-triggered oneshot service to remind myself to stay hydrated.
 
 ### Install
 Only been tested for [Fedora](https://fedoraproject.org/) Linux. Should work fine on other Linux distros, but requires `libnotify` installed.
